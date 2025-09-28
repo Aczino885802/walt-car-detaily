@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function FinalCTA() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5213117749365?text=Estoy%20listo%20para%20transformar%20mi%20vehículo%20con%20Walt%20Car%20Detaily', '_blank');
+    window.open('https://wa.me/573117749365?text=Estoy%20listo%20para%20transformar%20mi%20vehículo%20con%20Walt%20Car%20Detaily', '_blank');
   };
 
   const handleCall = () => {

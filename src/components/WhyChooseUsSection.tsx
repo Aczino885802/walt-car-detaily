@@ -58,7 +58,7 @@ const processSteps = [
 
 const specialServices = [
   "Vehículos de colección y clásicos",
-  "Motocicletas premium",
+  "Motocicletas",
   "Vehículos comerciales",
   "Flotas empresariales",
   "Preparación para eventos",
@@ -190,7 +190,7 @@ export function WhyChooseUsSection() {
               </div>
               <div className="flex justify-between items-center p-4 premium-glass rounded-xl border border-[#808080]/50">
                 <span className="text-white font-medium">Domingos</span>
-                <span className="text-[#C0C0C0]">9:00 AM - 4:00 PM</span>
+                <span className="text-[#C0C0C0]">Se hacen excepciones</span>
               </div>
             </div>
           </div>

@@ -37,7 +37,7 @@ export function TrustSection() {
 
   const stats = [
     { number: "500+", label: "Vehículos Transformados" },
-    { number: "5+", label: "Años de Experiencia" },
+    { number: "10+", label: "Años de Experiencia" },
     { number: "100%", label: "Satisfacción Garantizada" },
     { number: "24/7", label: "Soporte al Cliente" }
   ];

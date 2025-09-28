@@ -18,9 +18,9 @@ export function ServicesSection() {
     {
       category: "EXTERIOR",
       icon: <Sparkles className="w-8 h-8 text-[#007BFF]" />,
-      title: "Descontaminación de ranuras y pintura",
-      description: "Elimina impurezas y manchas para un acabado perfecto.",
-      features: ["Arcilla de limpieza", "Productos especializados", "Técnica profesional"]
+      title: "Tratamiento de vidrios y rines",
+      description: "Claridad total y acabado brillante.",
+      features: ["Terminado impecable", "Eliminación de gotas secas", "capa protectora"]
     },
     {
       category: "RESTAURACIÓN",

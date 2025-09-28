@@ -82,7 +82,7 @@ export function CeramicSection() {
                 </div>
                 <div>
                   <span className="text-[#C0C0C0]">Garantía:</span>
-                  <span className="text-white ml-2">5 años</span>
+                  <span className="text-white ml-2">2 años</span>
                 </div>
               </div>
             </motion.div>

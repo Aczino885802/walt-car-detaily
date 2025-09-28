@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/5213117749365"
+                href="https://wa.me/573117749365"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"

@@ -39,7 +39,7 @@ export function ServicesSection() {
     {
       category: "INTERIOR",
       icon: <Car className="w-8 h-8 text-[#007BFF]" />,
-      title: "Lavado de cojinetería, techo y alfombras",
+      title: "Lavado de cojinería, techo y alfombras",
       description: "Limpieza profunda interior.",
       features: ["Extracción húmeda", "Productos especiales", "Desinfección total"]
     },

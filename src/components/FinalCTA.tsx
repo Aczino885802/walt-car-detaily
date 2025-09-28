@@ -143,7 +143,7 @@ export function FinalCTA() {
             </div>
             <div className="flex items-center justify-center gap-3 text-[#C0C0C0]">
               <div className="w-2 h-2 bg-[#007BFF] rounded-full"></div>
-              <span>Presupuesto gratuito</span>
+              <span>Presupuesto comodo</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-[#C0C0C0]">
               <div className="w-2 h-2 bg-[#007BFF] rounded-full"></div>

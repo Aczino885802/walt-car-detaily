@@ -6,7 +6,7 @@ import { GallerySection } from './components/GallerySection';
 import { TrustSection } from './components/TrustSection';
 import { WhyChooseUsSection } from './components/WhyChooseUsSection';
 import { FinalCTA } from './components/FinalCTA';
-import { Footer } from './components/Footer';
+import  Footer  from './components/Footer';
 
 export default function App() {
   return (

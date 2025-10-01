@@ -5,7 +5,7 @@ const features = [
   {
     highlight: "EXPERIENCIA",
     icon: <Star className="h-8 w-8 text-[#007BFF]" />,
-    title: "5+ Años de Experiencia",
+    title: "10+ Años de Experiencia",
     description: "Especialistas en vehículos transformados"
   },
   {

@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/573117749365"
+                href="https://wa.me/573132020301"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
@@ -122,26 +122,19 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#007BFF]" />
-                <a
-                  href="tel:+573117749365"
-                  className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300"
-                >
-                  +57 311 774 9365
-                </a>
+                <div className="text-[#C0C0C0] text-sm">
+                  <p>+57 311 774 9365</p>
+                  <p>+57 313 202 0301</p>
+                </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-start gap-3">
                 <MessageCircle className="w-5 h-5 text-[#007BFF]" />
-                <a
-                  href="https://wa.me/573117749365"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300"
-                >
+                <p className="text-[#C0C0C0] text-sm">
                   WhatsApp
-                </a>
+                </p>
               </div>
             </div>
           </motion.div>
@@ -179,4 +172,3 @@ export default function Footer() {
     </footer>
   );
 }
-

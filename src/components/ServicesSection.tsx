@@ -34,7 +34,7 @@ export function ServicesSection() {
       icon: <Shield className="w-8 h-8 text-[#007BFF]" />,
       title: "Protección diamantizada con nano cerámico",
       description: "Capa protectora y duradera para tu pintura.",
-      features: ["Nano cerámica 9H", "Durabilidad 2-5 años", "Hidrofóbico extremo"]
+      features: ["Nano cerámica 9H", "Larga durabilidad", "Hidrofóbico extremo"]
     },
     {
       category: "INTERIOR",
@@ -141,7 +141,7 @@ export function ServicesSection() {
           <Button 
             size="lg"
             className="premium-button text-white px-12 py-4 text-lg font-semibold flex items-center justify-center gap-3 mx-auto bg-gradient-to-r from-[#007BFF] to-[#0056b3] hover:from-[#0056b3] hover:to-[#007BFF] transition-all duration-500"
-            onClick={() => window.open('https://wa.me/573117749365?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20detailing', '_blank')}
+            onClick={() => window.open('https://wa.me/573132020301?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20detailing', '_blank')}
           >
             <Phone className="w-6 h-6" />
             COTIZAR

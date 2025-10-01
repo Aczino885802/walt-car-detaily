@@ -2,16 +2,16 @@ import { motion } from 'motion/react';
 
 export function FinalCTA() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/573117749365?text=Estoy%20listo%20para%20transformar%20mi%20vehículo%20con%20Walt%20Car%20Detaily', '_blank');
+    window.open('https://wa.me/573132020301?text=Estoy%20listo%20para%20transformar%20mi%20vehículo%20con%20Walt%20Car%20Detaily', '_blank');
   };
 
   const handleCall = () => {
   if (/Mobi|Android/i.test(navigator.userAgent)) {
     // Móvil → abrir llamada
-    window.location.href = 'tel:3117749365';
+    window.location.href = 'tel:+573132020301';
   } else {
     // Escritorio → mostrar alerta o copiar número
-    alert("Llámanos al +57 311 774 9365");
+    alert("Llámanos al +57 313 2020301");
   }
 };
 

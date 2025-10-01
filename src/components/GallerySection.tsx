@@ -151,7 +151,7 @@ const galleryImages = [
             ¿Quieres que tu vehículo luzca así?
           </p>
           <button
-            onClick={() => window.open('https://wa.me/573117749365?text=Quiero%20ver%20más%20ejemplos%20de%20trabajos', '_blank')}
+            onClick={() => window.open('https://wa.me/573132020301?text=Quiero%20ver%20más%20ejemplos%20de%20trabajos', '_blank')}
             className="bg-gradient-to-r from-[#007BFF] to-[#0056b3] text-white px-8 py-3 rounded-lg hover:scale-105 transition-transform duration-300 font-semibold"
           >
             Ver Más Trabajos

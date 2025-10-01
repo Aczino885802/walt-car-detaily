@@ -8,28 +8,41 @@ export function GallerySection() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const galleryImages = [
-    {
-      src: "https://images.unsplash.com/photo-1644749700856-a82a92828a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBzaG93cm9vbSUyMHByZW1pdW18ZW58MXx8fHwxNzU4ODI5NzgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Premium Car Showroom"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1699078844834-44f0475f1f34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBkZXRhaWxpbmclMjBwcmVtaXVtJTIwZmluaXNofGVufDF8fHx8MTc1ODgyOTc4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Premium Car Detailing"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1662414018932-402b6425faa3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCTVclMjBNZXJjZWRlcyUyMGx1eHVyeSUyMGNhcnxlbnwxfHx8fDE3NTg4Mjk3ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Luxury BMW Mercedes"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1676215733351-ed2522610128?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcG9ydHMlMjBjYXIlMjBibGFjayUyMG1ldGFsbGljfGVufDF8fHx8MTc1ODgyOTc3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Black Metallic Sports Car"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1694678505383-676d78ea3b96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBjZXJhbWljJTIwY29hdGluZyUyMHdhdGVyJTIwYmVhZGluZ3xlbnwxfHx8fDE3NTg4Mjk3ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Ceramic Coating Results"
-    }
-  ];
+const galleryImages = [
+  {
+    src: "/assets/img1.jpg",
+    alt: "Auto Premium"
+  },
+  {
+    src: "/assets/img2.jpg",
+    alt: "Detalle interior"
+  },
+  {
+    src: "/assets/img3.jpg",
+    alt: "Carro deportivo"
+  },
+  {
+    src: "/assets/img4.jpg",
+    alt: "Protección cerámica"
+  },
+  {
+    src: "/assets/img5.jpg",
+    alt: "Auto clásico"
+  },
+  {
+    src: "/assets/img6.jpg",
+    alt: "Limpieza profunda"
+  },
+  {
+    src: "/assets/img7.jpg",
+    alt: "Auto familiar"
+  },
+  {
+    src: "/assets/img8.jpg",
+    alt: "Auto deportivo de lujo"
+  }
+];
+
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {

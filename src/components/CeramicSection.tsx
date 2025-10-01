@@ -39,7 +39,7 @@ export function CeramicSection() {
             {/* Features */}
             <div className="space-y-4">
               {[
-                "Protección duradera hasta 5 años",
+                "Protección duradera",
                 "Resistencia a rayos UV y químicos",
                 "Efecto hidrofóbico superior",
                 "Brillo excepcional y profundo"
@@ -88,45 +88,26 @@ export function CeramicSection() {
             </motion.div>
           </motion.div>
 
-          {/* Image */}
-          <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <div className="relative overflow-hidden rounded-2xl">
-              <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1694678505383-676d78ea3b96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBjZXJhbWljJTIwY29hdGluZyUyMHdhdGVyJTIwYmVhZGluZ3xlbnwxfHx8fDE3NTg4Mjk3ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Ceramic Coating Water Beading Effect"
-                className="w-full h-[500px] object-cover"
-              />
-              
-              {/* Overlay effects */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-              
-              {/* Floating elements */}
-              <motion.div
-                animate={{ 
-                  y: [0, -10, 0],
-                  rotate: [0, 2, 0]
-                }}
-                transition={{ 
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="absolute top-8 right-8 bg-[#007BFF]/20 backdrop-blur-sm border border-[#007BFF]/30 rounded-lg p-4"
-              >
-                <div className="text-white text-sm font-semibold">Nano Ceramic</div>
-                <div className="text-[#007BFF] text-xs">Molecular Level</div>
-              </motion.div>
-            </div>
+         {/* Image */}
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="relative"
+>
+  <div className="relative overflow-hidden rounded-2xl">
+    <motion.img
+      src="/img 9.jpg"
+      alt="Ceramic Coating Water Beading Effect"
+      className="w-full h-[600px] object-cover"
+      initial={{ scale: 1 }}
+      whileInView={{ scale: 1.2 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+    />
+  </div>
+</motion.div>
 
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#007BFF]/20 to-transparent rounded-2xl blur-xl -z-10"></div>
-          </motion.div>
         </div>
       </div>
     </section>

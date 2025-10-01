@@ -9,39 +9,16 @@ export function GallerySection() {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
 const galleryImages = [
-  {
-    src: "/assets/img1.jpg",
-    alt: "Auto Premium"
-  },
-  {
-    src: "/assets/img2.jpg",
-    alt: "Detalle interior"
-  },
-  {
-    src: "/assets/img3.jpg",
-    alt: "Carro deportivo"
-  },
-  {
-    src: "/assets/img4.jpg",
-    alt: "Protección cerámica"
-  },
-  {
-    src: "/assets/img5.jpg",
-    alt: "Auto clásico"
-  },
-  {
-    src: "/assets/img6.jpg",
-    alt: "Limpieza profunda"
-  },
-  {
-    src: "/assets/img7.jpg",
-    alt: "Auto familiar"
-  },
-  {
-    src: "/assets/img8.jpg",
-    alt: "Auto deportivo de lujo"
-  }
+  { src: "/img 1.jpg", alt: "Auto Premium" },
+  { src: "/img 2.jpg", alt: "Detalle interior" },
+  { src: "/img 3.jpg", alt: "Carro deportivo" },
+  { src: "/img 4.jpg", alt: "Protección cerámica" },
+  { src: "/img 5.jpg", alt: "Auto clásico" },
+  { src: "/img 6.jpg", alt: "Limpieza profunda" },
+  { src: "/img 7.jpg", alt: "Auto familiar" },
+  { src: "/img 8.jpg", alt: "Auto deportivo de lujo" },
 ];
+
 
 
   const scroll = (direction: 'left' | 'right') => {
@@ -147,7 +124,7 @@ const galleryImages = [
                   
                   {/* Hover content */}
                   <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h4 className="font-semibold text-lg mb-1">Resultado Premium</h4>
+                    <h4 className="font-semibold text-lg mb-1">Resultado </h4>
                     <p className="text-sm text-[#C0C0C0]">Transformación completa</p>
                   </div>
 

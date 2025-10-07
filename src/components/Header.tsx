@@ -38,11 +38,11 @@ export function Header() {
                 textShadow: '0 0 20px rgba(0, 123, 255, 0.3)'
               }}
             >
-              WALT.CAR.DETAILY
+              WALT.CAR.DETAILING
             </h1>
           </div>
 
-          {/* Mobile menu button - alineado a la derecha */}
+          {/* Botón menú móvil */}
           <button 
             onClick={toggleMenu}
             className="text-white hover:text-[#007BFF] transition-colors duration-300 z-50 relative"
@@ -58,7 +58,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Menú móvil */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -66,7 +66,8 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md"
+            // 🔹 Fondo más oscuro y definido
+            className="fixed inset-0 z-40 bg-black/98 backdrop-blur-lg"
             onClick={toggleMenu}
           >
             <motion.div
@@ -74,51 +75,35 @@ export function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="absolute right-0 top-0 h-full w-80 bg-gradient-to-b from-[#1C1C1C] to-black border-l border-gray-800 shadow-2xl"
+              // 🔹 Panel con degradado azul sutil y mejor contraste
+              className="absolute right-0 top-0 h-full w-80 bg-gradient-to-b from-[#141414] to-black border-l border-[#007BFF]/40 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col h-full pt-20 px-8">
                 <nav className="space-y-8">
-                  <motion.button
-                    initial={{ x: 50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.1, duration: 0.3 }}
-                    onClick={() => scrollToSection('inicio')}
-                    className="block w-full text-left text-2xl text-white hover:text-[#007BFF] transition-colors duration-300 font-medium tracking-wide py-4 border-b border-gray-800 hover:border-[#007BFF]"
-                  >
-                    Inicio
-                  </motion.button>
-                  
-                  <motion.button
-                    initial={{ x: 50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.3 }}
-                    onClick={() => scrollToSection('servicios')}
-                    className="block w-full text-left text-2xl text-white hover:text-[#007BFF] transition-colors duration-300 font-medium tracking-wide py-4 border-b border-gray-800 hover:border-[#007BFF]"
-                  >
-                    Servicios
-                  </motion.button>
-                  
-                  <motion.button
-                    initial={{ x: 50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.3, duration: 0.3 }}
-                    onClick={() => scrollToSection('galeria')}
-                    className="block w-full text-left text-2xl text-white hover:text-[#007BFF] transition-colors duration-300 font-medium tracking-wide py-4 border-b border-gray-800 hover:border-[#007BFF]"
-                  >
-                    Galería
-                  </motion.button>
-                  
-                  <motion.button
-                    initial={{ x: 50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.4, duration: 0.3 }}
-                    onClick={() => scrollToSection('contacto')}
-                    className="block w-full text-left text-2xl text-white hover:text-[#007BFF] transition-colors duration-300 font-medium tracking-wide py-4 border-b border-gray-800 hover:border-[#007BFF]"
-                  >
-                    Contacto
-                  </motion.button>
+                  {[
+                    { id: 'inicio', label: 'Inicio', delay: 0.1 },
+                    { id: 'servicios', label: 'Servicios', delay: 0.2 },
+                    { id: 'galeria', label: 'Galería', delay: 0.3 },
+                    { id: 'contacto', label: 'Contacto', delay: 0.4 },
+                  ].map((item) => (
+                    <motion.button
+                      key={item.id}
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: item.delay, duration: 0.3 }}
+                      onClick={() => scrollToSection(item.id)}
+                      className="block w-full text-left text-2xl text-white hover:text-[#007BFF] transition-colors duration-300 font-medium tracking-wide py-4 border-b border-gray-800 hover:border-[#007BFF]"
+                    >
+                      {item.label}
+                    </motion.button>
+                  ))}
                 </nav>
+
+                {/* Línea decorativa inferior */}
+                <div className="mt-auto py-6 border-t border-gray-800 text-center text-sm text-gray-500">
+                  © {new Date().getFullYear()} WALT.CAR.DETAILING
+                </div>
               </div>
             </motion.div>
           </motion.div>

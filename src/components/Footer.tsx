@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
-import exampleVideo from "../assets/fondo-web.mp4";
+const exampleVideo = "/fondo web 1.mp4";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {

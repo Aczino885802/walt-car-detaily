@@ -38,7 +38,7 @@ export function HeroSection() {
           >
             TRANSFORMA TU VEHÍCULO CON
             <br />
-            <span className="text-[#007BFF]">WALT CAR DETAILY</span>
+            <span className="text-[#007BFF]">WALT CAR DETAILING</span>
           </motion.h1>
           
           <motion.p 

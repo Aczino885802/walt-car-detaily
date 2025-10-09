@@ -9,14 +9,14 @@ export function GallerySection() {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
 const galleryImages = [
+  { src: "/img 10.jpg", alt: "Corvette" },
   { src: "/img 1.jpg", alt: "Auto Premium" },
   { src: "/img 2.jpg", alt: "Detalle interior" },
   { src: "/img 3.jpg", alt: "Carro deportivo" },
   { src: "/img 4.jpg", alt: "Protección cerámica" },
   { src: "/img 5.jpg", alt: "Auto clásico" },
   { src: "/img 6.jpg", alt: "Limpieza profunda" },
-  { src: "/img 7.jpg", alt: "Auto familiar" },
-  { src: "/img 8.jpg", alt: "Auto deportivo de lujo" },
+  { src: "/img 7.jpg", alt: "Auto familiar" }
 ];
 
 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, MessageCircle } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Instagram, Facebook, Video } from "lucide-react";
+
 const exampleVideo = "/fondo web 1.mp4";
 
 export default function Footer() {
@@ -31,22 +32,45 @@ export default function Footer() {
               className="h-32 md:h-40 lg:h-52 w-auto rounded-lg object-cover"
             />
             <p className="text-[#C0C0C0] leading-relaxed">
-              Transformamos tu vehículo con la más alta calidad en detailing
-              automotriz premium.
+              Transformamos tu vehículo con la más alta calidad en detailing automotriz premium.
             </p>
-            <div className="flex gap-4">
+
+            {/* Redes sociales */}
+            <div className="flex gap-3">
+              
+              {/* Instagram */}
               <a
-                href="https://wa.me/573132020301"
+                href="https://www.instagram.com/waltcardetaily/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                className="w-10 h-10 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
-                <MessageCircle className="w-5 h-5 text-white" />
+                <Instagram className="w-5 h-5 text-white" />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/profile.php?id=61581658996087"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gradient-to-r from-[#1877F2] to-[#0A58CA] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
+                <Facebook className="w-5 h-5 text-white" />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@waltcardetaily?lang=es-419"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gradient-to-r from-[#000000] via-[#69C9D0] to-[#EE1D52] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
+                <Video className="w-5 h-5 text-white" />
               </a>
             </div>
           </motion.div>
 
-          {/* Navigation */}
+          {/* Navegación */}
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -83,7 +107,7 @@ export default function Footer() {
             </nav>
           </motion.div>
 
-          {/* Services */}
+          {/* Servicios */}
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -92,16 +116,16 @@ export default function Footer() {
             className="space-y-4"
           >
             <h4 className="text-white font-semibold text-lg">Servicios</h4>
-            <div className="space-y-3">
-              <p className="text-[#C0C0C0]">Detailing Premium</p>
-              <p className="text-[#C0C0C0]">Nano Cerámico</p>
-              <p className="text-[#C0C0C0]">Restauración</p>
-              <p className="text-[#C0C0C0]">Protección</p>
-              <p className="text-[#C0C0C0]">Pulido Completo</p>
+            <div className="space-y-3 text-[#C0C0C0]">
+              <p>Detailing Premium</p>
+              <p>Nano Cerámico</p>
+              <p>Restauración</p>
+              <p>Protección</p>
+              <p>Pulido Completo</p>
             </div>
           </motion.div>
 
-          {/* Contact */}
+          {/* Contacto */}
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -113,13 +137,9 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#007BFF] mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-[#C0C0C0] text-sm">
-                    Medellin
-                    <br />
-                    Colombia
-                  </p>
-                </div>
+                <p className="text-[#C0C0C0] text-sm">
+                  Medellín, Colombia
+                </p>
               </div>
 
               <div className="flex items-start gap-3">
@@ -132,15 +152,13 @@ export default function Footer() {
 
               <div className="flex items-start gap-3">
                 <MessageCircle className="w-5 h-5 text-[#007BFF]" />
-                <p className="text-[#C0C0C0] text-sm">
-                  WhatsApp
-                </p>
+                <p className="text-[#C0C0C0] text-sm">waltcardetaily@gmail.com</p>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Bottom section */}
+        {/* Pie inferior */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -149,20 +167,22 @@ export default function Footer() {
           className="border-t border-gray-800 mt-12 pt-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[#C0C0C0] text-sm">
-              © 2024 Walt Car Detaily. Todos los derechos reservados.
+            <p className="text-[#C0C0C0] text-sm text-center md:text-left">
+              © 2024 Walt Car Detaily. Todos los derechos reservados. <br />
+              <a
+                href="https://waltcardetailing.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#007BFF] hover:underline"
+              >
+                
+              </a>
             </p>
             <div className="flex gap-6 text-sm">
-              <a
-                href="#"
-                className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300"
-              >
+              <a href="#" className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300">
                 Términos y Condiciones
               </a>
-              <a
-                href="#"
-                className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300"
-              >
+              <a href="#" className="text-[#C0C0C0] hover:text-[#007BFF] transition-colors duration-300">
                 Política de Privacidad
               </a>
             </div>

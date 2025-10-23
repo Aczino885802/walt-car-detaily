@@ -40,7 +40,7 @@ export default function Footer() {
               
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/waltcardetaily/"
+                href="https://www.instagram.com/walt_car_detailing/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
